@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lection - 9</title>
+</head>
+<body>
+	<h5>Задание: 
+		<p>
+			Поработаем с числовым палиндромом) Числовой палиндром — это натуральное число, которое читается слева направо и справа налево одинаково.<br> Иначе говоря, отличается симметрией записи (расположения цифр), причём число знаков может быть как чётным, так и нечётным. <br><br>
+
+<br>
+
+Но<br><br><br>
+
+
+
+Палиндром можно получить как результат операций над другими числами. Возьмём любое натуральное число и сложим его с обращённым числом, то есть записанным теми же <br>цифрами, но в обратном порядке. Проделаем то же действие с получившейся суммой и будем повторять его до тех пор, пока не образуется палиндром. Иногда достаточно <br>сделать всего один шаг (например, 312 + 213 = 525), но, как правило, требуется не менее двух. Скажем, число 96 порождает палиндром 4884 только на четвёртом шаге....
+		</p>
+</h5>
+	<script>
+// 		function polyDrom (stringPolydrom,poly) {
+
+// 		var result	= '';
+// 		for( var i = 0; i < stringPolydrom.lenght; i++){
+// 		 	result = stringPolydrom.String()(i) + result;
+// 		}
+// 		if (Number(result) === stringPolydrom) {
+// 			poly = true;
+			
+// 	}
+// 			return poly
+// }
+// console.log(polyDrom(1221,false))
+
+
+			var poly = 1221;
+			var doString = poly.toString();
+			var ylop = ``;
+			var isPalindrome = false;
+
+			for (var i = 0; i < doString.length; i++) {
+			ylop = doString.charAt(i) + ylop;
+			console.log(i);
+			console.log(ylop)
+			}
+
+			if (Number(ylop) === poly) {
+			isPalindrome = true;
+			console.log(isPalindrome)
+			}
+			console.log(isPalindrome)
+	</script>
+</body>
+</html>
